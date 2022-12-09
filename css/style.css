@@ -11,7 +11,7 @@ body {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 330px;
+  height: 280px;
 }
 .header__background {
   position: absolute;
@@ -24,6 +24,26 @@ body {
   text-align: center;
   width: 80%;
   padding-left: 10%;
+}
+.header input {
+  text-align: center;
+  display: inline-block;
+  margin-left: 10%;
+  border: none;
+  margin-bottom: 2%;
+  height: 40px;
+  border-radius: 4px;
+  width: 350px;
+}
+.header button {
+  background-color: rgb(13, 110, 253);
+  width: auto;
+  height: 40px;
+  border: none;
+  color: white;
+}
+.header #mail {
+  height: 40px;
 }
 
 .nav {
