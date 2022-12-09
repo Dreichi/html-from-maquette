@@ -1,0 +1,47 @@
+.nav {
+    font-family: Roboto;
+    font-size: 20px;
+    position: relative;
+    height: 100px;
+    display: flex;
+    
+    div {
+        position: absolute;
+    }
+
+    &__logo {
+        margin-left: 5%;
+        margin-top: 37px;
+        
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            font-size: larger;
+        }
+    }
+
+    &__signup {
+        margin-top: 20px;
+        margin-right: 5%;
+        right: 0%;
+        height: 62px;
+        width: 90px;
+        background-color: rgb(13, 110, 253);
+        border-radius: 4px;
+
+        a {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            text-decoration: none;
+            height: 62px;
+            width: 90px;
+            position: absolute;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+}
