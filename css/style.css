@@ -5,18 +5,21 @@ body {
 }
 
 .header {
+  text-align: center;
   font-family: Roboto;
   font-size: 20px;
-  display: inline-block;
   overflow: hidden;
   position: relative;
   width: 100%;
   height: 280px;
+  z-index: 1;
 }
 .header__background {
   position: absolute;
+  left: 0% !important;
+  margin-right: 100% !important;
   width: 100%;
-  height: 100%;
+  height: 280px;
   z-index: -1;
 }
 .header__h1 {
@@ -27,8 +30,6 @@ body {
 }
 .header input {
   text-align: center;
-  display: inline-block;
-  margin-left: 10%;
   border: none;
   margin-bottom: 2%;
   height: 40px;
@@ -36,6 +37,7 @@ body {
   width: 350px;
 }
 .header button {
+  align-content: center;
   background-color: rgb(13, 110, 253);
   width: auto;
   height: 40px;
@@ -86,6 +88,147 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+
+.puzzle {
+  font-family: Roboto;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.div__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.div__article__p {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.fa-puzzle-piece {
+  color: rgb(13, 110, 253);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+form {
+  padding-bottom: 5%;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  border: 1px solid rgb(175, 174, 174);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+form input {
+  width: 70%;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgb(0, 0, 0);
+  padding-left: 10px;
+  color: grey;
+}
+
+form textarea{
+  padding-top: 10px;
+  width: 70%;
+  margin-bottom: 20px;
+  height: 80px;
+  border-radius: 4px;
+  border: 1px solid rgb(0, 0, 0);
+  padding-left: 10px;
+}
+
+form button {
+  width: 50%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(13, 110, 253);
+  color: white;
+}
+
+footer {
+  padding-top: 2%;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+}
+
+footer a {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  text-decoration: none;
+  color: blue;
+}
+
+footer p {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+}
+
+@media (min-width: 769px) {
+  .header {
+    height: 400px;
+  }
+  .header__background {
+    height: 400px;
+  }
+  .header__h1 {
+    font-size: 40px;
+    width: 50%;
+    padding-left: 25%;
+    padding-top: 5%;
+  }
+  .header input {
+    width: 500px;
+    font-size: 20px;
+  }
+  .header button {
+    height: 45px;
+    font-size: 20px;
+  }
+  .puzzle {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+  }
+  form {
+    width: 40%
+  }
+  .div__article__p {
+    width: 50%;
+  }
+  form input {
+    height: 60px;
+  }
+  form button {
+    font-size: large;
+    height: 60px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
